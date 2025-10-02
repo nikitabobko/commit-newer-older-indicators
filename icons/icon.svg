@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Commit Newer/Older Indicators — Icon</title>
+  <desc id="desc">An icon showing a git log pictogram with connected commits and labels Newer and Older.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#24292f"/>
+      <stop offset="1" stop-color="#57606a"/>
+    </linearGradient>
+    <style><![CDATA[
+      .bg { fill: #ffffff; }
+      .frame { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 2; rx: 16; ry: 16; }
+      .rail { stroke: url(#g); stroke-width: 8; stroke-linecap: round; }
+      .node { fill: #0969da; stroke: #0550ae; stroke-width: 2; }
+      .node.mid { fill: #218bff; }
+      .label { font: 700 16px/1.1 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; text-transform: uppercase; letter-spacing: .04em; }
+      .label.newer { fill: #1a7f37; }
+      .label.older { fill: #8250df; }
+      .pill { fill: #ffffff; stroke: #d0d7de; stroke-width: 1.5; rx: 8; ry: 8; }
+    ]]></style>
+  </defs>
+
+  <!-- soft background frame -->
+  <rect class="frame" x="3" y="3" width="122" height="122" rx="16" ry="16" />
+
+  <!-- git log rail -->
+  <path class="rail" d="M40 20 L40 108" />
+
+  <!-- commit nodes -->
+  <circle class="node" cx="40" cy="28" r="10"/>
+  <circle class="node mid" cx="40" cy="64" r="10"/>
+  <circle class="node" cx="40" cy="100" r="10"/>
+
+  <!-- labels as pills -->
+  <g transform="translate(64,20)">
+    <rect class="pill" x="0" y="0" width="56" height="24" rx="8" ry="8"/>
+    <text class="label newer" x="28" y="17" text-anchor="middle">Newer</text>
+  </g>
+  <g transform="translate(64,84)">
+    <rect class="pill" x="0" y="0" width="56" height="24" rx="8" ry="8"/>
+    <text class="label older" x="28" y="17" text-anchor="middle">Older</text>
+  </g>
+</svg>

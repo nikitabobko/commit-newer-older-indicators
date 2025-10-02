@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Commit Newer/Older Indicators",
+  "version": "1.0.0",
+  "description": "Adds simple 'Newer'/'Older' indicators to commit lists",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*",
+        "https://jetbrains.team/*",
+        "https://*.jetbrains.team/*",
+        "https://jetbrains.space/*",
+        "https://*.jetbrains.space/*"
+      ],
+      "js": ["src/content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
