@@ -27,17 +27,15 @@
   <path class="rail" d="M40 20 L40 108" />
 
   <!-- commit nodes -->
-  <circle class="node" cx="40" cy="28" r="10"/>
-  <circle class="node mid" cx="40" cy="64" r="10"/>
-  <circle class="node" cx="40" cy="100" r="10"/>
+  <circle class="node" cx="32" cy="28" r="10"/>
+  <circle class="node mid" cx="32" cy="64" r="10"/>
+  <circle class="node" cx="32" cy="100" r="10"/>
 
   <!-- labels as pills -->
   <g transform="translate(64,20)">
-    <rect class="pill" x="0" y="0" width="56" height="24" rx="8" ry="8"/>
-    <text class="label newer" x="28" y="17" text-anchor="middle">Newer</text>
+    <text class="label newer" x="19" y="14" text-anchor="middle">Newer</text>
   </g>
   <g transform="translate(64,84)">
-    <rect class="pill" x="0" y="0" width="56" height="24" rx="8" ry="8"/>
-    <text class="label older" x="28" y="17" text-anchor="middle">Older</text>
+    <text class="label older" x="19" y="22" text-anchor="middle">Older</text>
   </g>
 </svg>
