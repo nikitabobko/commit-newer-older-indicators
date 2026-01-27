@@ -1,5 +1,10 @@
 {
   "manifest_version": 3,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "commit-newer-older-indicators@nikitabobko"
+    }
+  },
   "name": "Commit Newer/Older Indicators",
   "version": "1.0.0",
   "description": "Adds simple 'Newer'/'Older' indicators to commit lists",
