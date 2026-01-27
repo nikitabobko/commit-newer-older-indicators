@@ -2,7 +2,10 @@
   "manifest_version": 3,
   "browser_specific_settings": {
     "gecko": {
-      "id": "commit-newer-older-indicators@nikitabobko"
+      "id": "commit-newer-older-indicators@nikitabobko",
+      "data_collection_permissions": {
+        "required": [ "none" ]
+      }
     }
   },
   "name": "Commit Newer/Older Indicators",
